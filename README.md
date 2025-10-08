@@ -1,4 +1,4 @@
-# BUAN Logistics - Web Application
+# BUAN Logistics - Mobile Responsive - Web Application
 
 > **Live Abroad, Eat From Home** 🌍🍛
 
