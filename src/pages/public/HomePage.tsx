@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ArrowRight, Package, Globe, Shield, Clock, Users } from 'lucide-react'
-import { useEffect, useState } from 'react'
 import PageLayout from '../../components/layout/PageLayout'
 import Button from '../../components/ui/Button'
 import ServiceCard from '../../components/ui/ServiceCard'
