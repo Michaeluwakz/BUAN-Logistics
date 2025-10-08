@@ -16,14 +16,14 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md sticky top-0 z-40">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
             <Link to="/" className="flex items-center">
-            <span className="text-3xl font-bold font-poppins">
+            <span className="text-2xl sm:text-3xl font-bold font-poppins">
               <span className="text-[#003366]">BUA</span>
               <span className="text-[#3399FF]">N</span>
             </span>
-            <span className="ml-2 text-sm text-gray-600 hidden sm:block">Logistics</span>
+            <span className="ml-2 text-xs sm:text-sm text-gray-600 hidden sm:block">Logistics</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -121,33 +121,57 @@ export default function Header() {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              className="md:hidden border-t border-gray-200 py-4 overflow-hidden"
+              className="md:hidden border-t border-gray-200 py-4 overflow-hidden bg-white/70 backdrop-blur-md"
             >
               <div className="flex flex-col space-y-4">
-                <Link to="/" className="text-gray-700 hover:text-[#003366] transition-colors font-medium">
+                <Link 
+                  to="/" 
+                  className="text-gray-900 hover:text-[#003366] transition-colors font-medium"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   Home
                 </Link>
-                <Link to="/services" className="text-gray-700 hover:text-[#003366] transition-colors font-medium">
+                <Link 
+                  to="/services" 
+                  className="text-gray-900 hover:text-[#003366] transition-colors font-medium"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   Services
                 </Link>
-                <Link to="/tracking" className="text-gray-700 hover:text-[#003366] transition-colors font-medium">
+                <Link 
+                  to="/tracking" 
+                  className="text-gray-900 hover:text-[#003366] transition-colors font-medium"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   Track Order
                 </Link>
                 {state.isAuthenticated ? (
                   <>
-                    <Link to="/dashboard" className="text-gray-700 hover:text-[#003366] transition-colors font-medium">
+                    <Link 
+                      to="/dashboard" 
+                      className="text-gray-900 hover:text-[#003366] transition-colors font-medium"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       Dashboard
                     </Link>
-                    <Link to="/checkout" className="text-gray-700 hover:text-[#003366] transition-colors font-medium flex items-center">
+                    <Link 
+                      to="/checkout" 
+                      className="text-gray-900 hover:text-[#003366] transition-colors font-medium flex items-center"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       Cart {cartItemCount > 0 && `(${cartItemCount})`}
                     </Link>
                   </>
                 ) : (
                   <>
-                    <Link to="/login" className="text-gray-700 hover:text-[#003366] transition-colors font-medium">
+                    <Link 
+                      to="/login" 
+                      className="text-gray-900 hover:text-[#003366] transition-colors font-medium"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       Login
                     </Link>
-                    <Link to="/register">
+                    <Link to="/register" onClick={() => setMobileMenuOpen(false)}>
                       <Button variant="primary" size="small" className="w-full">
                         Get Started
                       </Button>

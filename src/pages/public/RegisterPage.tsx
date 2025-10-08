@@ -69,7 +69,7 @@ export default function RegisterPage() {
                   <input
                     type="text"
                     {...register('name', { required: 'Name is required' })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-green"
                     placeholder="John Doe"
                   />
                 </div>
@@ -93,7 +93,7 @@ export default function RegisterPage() {
                         message: 'Invalid email address'
                       }
                     })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-green"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -113,7 +113,7 @@ export default function RegisterPage() {
                   <input
                     type="tel"
                     {...register('phone', { required: 'Phone number is required' })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-green"
                     placeholder="+234 800 000 0000"
                   />
                 </div>
@@ -131,7 +131,7 @@ export default function RegisterPage() {
                   <input
                     type="text"
                     {...register('address', { required: 'Address is required' })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-green"
                     placeholder="123 Main St, Lagos"
                   />
                 </div>
@@ -157,7 +157,7 @@ export default function RegisterPage() {
                         message: 'Password must be at least 6 characters'
                       }
                     })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-green"
                     placeholder="••••••••"
                   />
                 </div>
@@ -178,7 +178,7 @@ export default function RegisterPage() {
                       required: 'Please confirm your password',
                       validate: value => value === password || 'Passwords do not match'
                     })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-green"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-primary-green"
                     placeholder="••••••••"
                   />
                 </div>
