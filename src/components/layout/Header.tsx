@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Menu, X, ShoppingCart, User, Package, ChevronDown } from 'lucide-react'
+import { Menu, X, ShoppingCart, User, ChevronDown } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Button from '../ui/Button'
 import { useApp } from '../../contexts/AppContext'

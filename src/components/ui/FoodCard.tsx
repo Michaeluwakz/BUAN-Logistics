@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 import { ShoppingCart, Plus, Minus } from 'lucide-react'
 import Card from './Card'
 import Button from './Button'

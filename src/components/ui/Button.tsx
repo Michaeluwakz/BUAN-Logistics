@@ -42,7 +42,7 @@ export default function Button({
         disabled || loading ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
       } ${className}`}
       disabled={disabled || loading}
-      {...props}
+      {...(props as any)}
     >
       {loading ? (
         <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />

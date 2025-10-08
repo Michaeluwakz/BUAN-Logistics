@@ -19,7 +19,7 @@ export default function LoginPage() {
   const { dispatch } = useApp()
   const navigate = useNavigate()
 
-  const onSubmit = (data: LoginFormData) => {
+  const onSubmit = (_data: LoginFormData) => {
     setLoading(true)
     // Simulate API call
     setTimeout(() => {

@@ -87,7 +87,7 @@ export default function AdminDashboard() {
                       fill="#8884d8"
                       dataKey="count"
                     >
-                      {mockAnalytics.ordersByStatus.map((entry, index) => (
+                      {mockAnalytics.ordersByStatus.map((_, index) => (
                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                       ))}
                     </Pie>
